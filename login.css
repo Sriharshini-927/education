@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(image/education9.jpg);
+    background-size:cover;
+    overflow: hidden;
+    background-repeat: no-repeat; 
+    padding: 0; 
+    
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    display: flex;
+    box-shadow: 0 4px 8px rgba(201, 22, 22, 0.959);
+    background-color: white;
+}
+
+.background-image {
+    flex: 1;
+    
+    position: relative;
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.signup-form {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup-form h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.signup-form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.signup-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.signup-form .terms {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: left;
+}
+
+.signup-form .terms input {
+    margin-right: 5px;
+}
+
+.signup-form button {
+    padding: 10px;
+    background-color: rgb(231, 178, 113);
+
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup-form p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+ 
+.signup-form button:hover {
+   color: bisque;
+}

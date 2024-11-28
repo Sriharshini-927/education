@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+body::before{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(51deg,#62c3fc 0%, #dff0fa 80%);
+    clip-path: circle(68.4% at 26% 31%);
+    animation: circle .8s;
+}
+
+/* text area */
+.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px -4px #9e9e9e;
+    border-radius: 5px;
+    animation: container 1.5s ease;
+}
+
+/* image scroll */
+@keyframes container {
+    0%{
+        margin-top: -100%;
+    }
+    100%{
+        top: 0;
+    }
+}
+.container .image{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/* side triangle */
+.container .image::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #f0f6ff;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+.container .form-area{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: form 1.8s ease;
+}
+
+
+/* full name & email next line */
+.container .form-area form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+/* full name & email */
+.container .form-area form input{
+    padding: 15px 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+}
+.container .form-area form input::placeholder{
+    color: #999;
+    letter-spacing: 1px;
+}
+.container .form-area form input:hover::placeholder,
+.container .form-area form textarea:hover::placeholder{
+    padding-left: 10px;
+    transition: .3s all ease-in-out;
+}
+
+
+/* send message */
+.container .form-area form button{
+    margin-top: 10px;
+    border: none;
+    padding: 10px 0px;
+    border-radius: 30px;
+    background-color: #62c3fc;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+}
+.fa-square-twitter{
+    color: black;
+    font-size: 30px;
+    
+}
+.fa-square-whatsapp{
+    color:  black;
+    font-size: 30px;
+}
+.fa-square-youtube{
+    color: black;
+    font-size: 30px;
+}
+.fa-square-instagram{
+    color: black;
+    font-size: 30px;
+}
+.fa-linkedin{
+    color: black;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+

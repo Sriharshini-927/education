@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>Student Registration Form Using Table in HTML</title>
+<link rel="stylesheet" href="registation.css">
+<link rel="icon" type="image/x-icon" href="image/image.png">
+
+</head>
+<body>
+    <h1><u>Registration Form</u></h1>
+    <form method="post" action="https://script.google.com/macros/s/AKfycbyXjuPMbAFJN-1a3usbe9rVgwD9dPUrDDz5qB4Zc7YTfzKMMueMGEpAV_A68EUrPIEp/exec" name="reg">
+    <table align="center" cellpadding = "10">
+    
+    <tr>
+    <td>First Name:</td>
+    <td><input type="text" name="FirstName" required>(Max 50 Characters Allowed)
+    </td>
+    </tr>
+    
+    <tr>
+    <td>Last Name:</td>
+    <td><input type="text" name="LastName" required>(Max 50 Characters Allowed)
+    </td>
+    </tr>
+    
+    <tr>
+    <td>Email ID:</td>
+    <td><input type="email" name="EmailID" required></td>
+    </tr>
+    
+    <tr>
+    <td>Mobile Number:</td>
+    <td><input type="text" name="MobileNumber" required >(10 Digits Allowed)
+    </td>
+    </tr>
+    
+    <tr>
+    <td>Gender:</td>
+    <td><input type="radio" name="Gender" value="Male" >Male
+    <input type="radio" name="Gender" value="Female" >Female</td>
+    </tr>
+    
+    <tr>
+    <td>Date of Birth(DOB):</td>
+    <td><input type ="date" required></td>
+    </tr>
+    
+    <tr>
+    <td>Address:</td>
+    <td><textarea name="Address" rows="3" cols="50" required></textarea></td>
+    </tr>
+    
+    
+    
+    <tr>
+    <td>Qualification</td>
+    <td>
+    <br/>
+    <input type="checkbox" name="HighSchool" value="High School">
+    10th
+    <input type="checkbox" name="HigherSchool" value="Higher School">
+    12th
+    <input type="checkbox" name="Graduation" value="UG">
+    UG
+    <input type="checkbox" name="PostGraduation" value="PG">
+    PG
+    </td>
+    </tr>
+    
+    <tr>
+        <td>Coures</td>
+        <td>
+            <select id="TRAINING" required>
+                <option value="C++">C++</option>
+                <option value="c">C</option>
+                <option value="JAVA">JAVA</option>
+                <option value="PYTHON">PYTHON</option>
+                <option value="BLOCKCHAIN">BLOCKCHAIN</option>
+                <option value="DEVOPS">DEVOPS</option>
+                <option value="AI WITH PYTHON"AI WITH PYTHION</option>
+            </select>
+        </td>
+    </tr>
+    
+    
+
+
+<!----------------------- Submit and Reset ------------------------------->
+<tr>
+    <td colspan="3" align="center">
+        <div class="name">
+            <button><a href="submit.html">Submit</a></button>    <button>Reset</button>    <button><a href="login.html">BACK</a>  </button>
+          
+        </div>
+
+   
+</td>
+</tr>
+</table>
+</form>
+</html>
